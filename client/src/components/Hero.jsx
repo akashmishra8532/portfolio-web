@@ -21,9 +21,7 @@ export default function Hero() {
           animate={{ opacity: 1 }}
           transition={{ duration: 1, delay: 0.2 }}
         >
-          <span className="[animation:typing_5s_steps(30)_infinite,blink_1s_step-end_infinite] whitespace-nowrap inline-block overflow-hidden border-r-2 border-primary pr-1">
-            Full-Stack Developer (MERN)
-          </span>
+          <span className="[animation:typing_5s_steps(30)_infinite,blink_1s_step-end_infinite] whitespace-nowrap inline-block overflow-hidden border-r-2 border-primary pr-1">Full-Stack Developer (MERN)</span>
         </motion.p>
         <div className="flex items-center gap-4">
           <a
@@ -41,11 +39,15 @@ export default function Hero() {
       </motion.div>
       <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, delay: 0.1 }}>
         <motion.div
-          className="aspect-square rounded-2xl bg-gradient-to-br from-primary/20 to-transparent border border-white/10 flex items-center justify-center relative overflow-hidden"
+          className="aspect-square rounded-2xl bg-gradient-to-br from-primary/20 to-transparent border border-white/10 relative overflow-hidden"
           animate={{ rotate: [0, 2, 0, -2, 0] }}
           transition={{ repeat: Infinity, duration: 10, ease: 'easeInOut' }}
         >
-          <span className="text-6xl">🚀</span>
+          <img 
+            src="/images/Profile_pic.jpg" 
+            alt="Akash Mishra - Full Stack Developer"
+            className="w-full h-full object-cover"
+          />
           <motion.div
             className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent"
             animate={{ opacity: [0.2, 0.4, 0.2] }}
