@@ -1,0 +1,36 @@
+@import "tailwindcss";
+@theme {
+  --color-primary: #0ea5e9;
+  --color-dark: #0b1220;
+  --color-light: #f8fafc;
+}
+
+html, body, #root {
+  height: 100%;
+}
+
+body { background-color: var(--color-dark); color: var(--color-light); }
+
+/* Smooth scrolling and offset for sticky header */
+html { scroll-behavior: smooth; }
+.section { scroll-margin-top: 84px; }
+
+.container {
+  max-width: 72rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+@keyframes blink {
+  50% { border-color: transparent }
+}
+[animation\:typing_5s_steps\(30\)_infinite\,blink_1s_step-end_infinite] {
+  width: 18ch;
+  animation: typing 5s steps(30) infinite, blink 1s step-end infinite;
+}
